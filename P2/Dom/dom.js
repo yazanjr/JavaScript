@@ -81,3 +81,4 @@ const num = document.getElementById("num")
 num.oninput = function(){
     par.style.fontSize = num.value +"px"
 }
+

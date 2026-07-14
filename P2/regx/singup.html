@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="newUsers.js" defer></script>
+    <style>
+        .flexChild{
+            padding: 10px;
+            background-color: aliceblue;
+            width: 100%;
+            text-align: left;
+            border-radius: 5px;
+            border: 1px aliceblue;
+        }
+        .flexText{
+            background-color: rgb(180, 107, 249);
+            text-align: center;
+            border: none;
+            color: aliceblue;
+        }
+        *{
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+       .flexContainer {
+        background-color: rgb(180, 107, 249);
+        align-items: center;
+        width: 30%;
+        display: flex;
+        gap: 10px;
+        margin: 10px auto;
+        padding: 10px;
+}
+
+    </style>
+</head>
+<body style="background-color: rgb(221, 193, 248);">
+    
+    <div class="flexContainer" style="flex-direction: column;">
+        <h1 style="color: aliceblue;">Sign Up</h1>
+        <div class="flexContainer" style="width: 100%; padding: 0;">
+            <input width="50%" type="text" class="flexChild" placeholder="First Name">
+            <input width="50%" type="text" class="flexChild" placeholder="Last Name">
+        </div>
+
+        <input type="text" class="flexChild" placeholder="Email">
+        <input type="password" class="flexChild" placeholder="Password">
+        <input type="password" class="flexChild" placeholder="Confirm Password">
+        <label class="flexText flexChild" >
+            <input type="checkbox">
+            i accep the Terms of Use & privacy Policy
+        </label>
+        
+        <button id="submit" class="flexChild" style="color: black; background-color: rgb(101, 101, 101);  border-radius: 10px; width: 95%; text-align: center;">Sign Up</button>
+        <div class="flexText flexChild">
+            Already have an account? <a>Login here</a>
+        </div>
+
+        <div class="flexText flexChild">
+            Copyright @ YourComany.com
+        </div>
+    </div>
+</body>
+</html>

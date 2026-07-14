@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="login.js" defer></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .mainflex{
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            background-color: aliceblue;
+            margin: 50px auto;
+            width: 70%;
+            border-radius: 10px;
+        }
+        
+       
+        .secondryflex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 50%;
+            gap: 30px;
+        }
+        .secondrychild{
+            width: 80%;
+        }
+        .inp{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: rgb(204, 203, 205);
+            border-radius: 30px;
+            padding: 20px;
+            border: none;
+        }
+        input{
+            border: none;
+            width: 90%;
+            background-color: inherit;
+            padding-left: 30px;
+            
+        }
+        input:focus{
+            border: none;
+            outline: none;
+        }
+        .txt{
+            color: green;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body style="background-color: blueviolet;">
+    <div class="mainflex">
+        <div class="secondryflex">
+            <img src="" width="50%"/>
+        </div>
+        <div class="secondryflex">
+            <h2>Member Login</h2>
+            <div class="inp secondrychild">
+                <img src="" width="5%">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inp secondrychild">
+                <img src="" width="5%">
+                <input type="password" placeholder="Password">
+            </div>
+            <button id ="sub" class="inp secondrychild" style="background-color: green; text-align: center; color: #ffffff; display: block;">
+                LOGIN
+            </button>
+            <div>Forgot <a class="txt">Username / password ?</a></div>
+            <div><a class="txt">Create your account</a></div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
